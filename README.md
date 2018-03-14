@@ -1,5 +1,3 @@
-# kaka-blog
-
 # 咔喀~的技术blog
 
 自律者自由!
@@ -13,7 +11,7 @@
 
 | project | Article |
 | --- | --- |
-| 布局 | Masonry等间距或等宽高排列View  |
+| 布局 | [Masonry等间距或等宽高排列View](https://github.com/zengfxios/kaka-blog/blob/master/notes/iOS/%E5%B8%83%E5%B1%80/Masonry%E7%AD%89%E9%97%B4%E8%B7%9D%E6%88%96%E7%AD%89%E5%AE%BD%E9%AB%98%E6%8E%92%E5%88%97View.md)  |
 
 
 ## 读书笔记
@@ -24,8 +22,13 @@
 * [ ] 《你不知道的JavaScript 中》
 * [ ] 《你不知道的JavaScript 下》
 * [ ] 《深入理解JavaScript》
-* [ ] 《ES6标准入门》
+* [ ] 《ES6标准入门》 
 * [ ] 《深入理解ES6》
 
 ## 计划和展望
 * [2018新年计划](https://github.com/zengfxios/kaka-blog/blob/master/%E8%A7%84%E5%88%92%E5%92%8C%E5%B1%95%E6%9C%9B/2018%E6%96%B0%E5%B9%B4%E8%AE%A1%E5%88%92.md)
+
+
+
+
+
