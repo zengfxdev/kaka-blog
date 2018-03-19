@@ -13,7 +13,7 @@
 
 * 声明(文字)形式:
 
-```
+```js
 var myObj = {
     key: value
 };
@@ -37,7 +37,7 @@ myObj.key = value;
 
 接着，对这两种创建方式做一个测试：
 
-```
+```js
 var myObj = new Object();
 console.log(myObj.__proto__ === Object.prototype);  // true
 
@@ -73,7 +73,7 @@ but this is rare) associated with it. This second object is known as a prototype
 来自<神作> 结论：
 对象`__proto__`属性的值就是它所对应的原型对象!
 
-```
+```js
 var myObj = new Object();
 myObj.__proto__ === Object.prototype;  // true
 
@@ -125,7 +125,7 @@ myobj2.__proto__ === Object.prototype; // true
 
 `var o1 = new Foo();`的底层实现大概是这样的：
 
-```
+```js
 // new的实现
 var o1 = new Object();
 o1.__proto__([[prototype]]) = Foo.prototype;
@@ -149,7 +149,7 @@ ES5关于Object和Function的规定：
  
 通过在Chrome中发现：所有对象均从`Object.prototype`继承属性.
 
-```
+```js
 console.log(Object.prototype);
 console.log(Object.prototype.__proto__);	//null
 ```
@@ -209,7 +209,7 @@ Object.__proto__ === Function.prototype  //true
 
 #### (原型)继承
 
-```
+```js
 function Foo(name) {
     this.name = name;
 }
@@ -281,7 +281,7 @@ function createAndLinkObject(o) {
 
 `var o1 = new Foo();`的底层实现大概是这样的：
 
-```
+```js
 // new的实现
 var o1 = new Object();
 o1.__proto__([[prototype]]) = Foo.prototype;
@@ -293,7 +293,7 @@ Foo.call(o1);
 
 以下是让文章作者困惑的一个例子：
 
-```
+```js
 var Base = function () {
     this.a = 2
 }
@@ -312,7 +312,7 @@ o2.a	// undefined
 
 其根本原因是
 
-```
+```js
 console.log(o1.__proto__ === Base.prototype);	// true
 console.log(o2.__proto__ === Base);	//true
 ```
