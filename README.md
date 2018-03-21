@@ -18,8 +18,7 @@
 
 | project | Article |
 | --- | --- |
-| JavaScript | [通过Object.create和new操作加深理解JS对象和原型链](https://github.com/zengfxios/kaka-blog/blob/master/notes/JavaScript/%E9%80%9A%E8%BF%87Object.create%E5%92%8Cnew%E6%93%8D%E4%BD%9C%E5%8A%A0%E6%B7%B1%E7%90%86%E8%A7%A3JS%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE.md) |
-
+| 基础 | * [通过Object.create和new操作加深理解JS对象和原型链](https://github.com/zengfxios/kaka-blog/blob/master/notes/JavaScript/%E9%80%9A%E8%BF%87Object.create%E5%92%8Cnew%E6%93%8D%E4%BD%9C%E5%8A%A0%E6%B7%B1%E7%90%86%E8%A7%A3JS%E5%AF%B9%E8%B1%A1%E5%92%8C%E5%8E%9F%E5%9E%8B%E9%93%BE.md)<br/> * [值和引用](https://github.com/zengfxios/kaka-blog/blob/master/notes/JavaScript/%E5%80%BC%E5%92%8C%E5%BC%95%E7%94%A8.md) |
 
 
 ## 读书笔记
