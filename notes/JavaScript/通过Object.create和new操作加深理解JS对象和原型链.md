@@ -339,7 +339,7 @@ console.log(o2.__proto__ === Base);	//true
 * `Bar.prototype = Object.create( Foo.prototype );`
 “创建一个新的 `Bar.prototype` 对象并把它关联到 `Foo.prototype`”
 
-好好琢磨下面这个图：
+好好琢磨下面这个图：来自[Function.prototype is a function](https://stackoverflow.com/questions/32928810/function-prototype-is-a-function)
 
 ![](media/15212700457182/15217131808138.jpg)
 
