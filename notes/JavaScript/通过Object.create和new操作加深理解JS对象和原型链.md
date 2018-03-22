@@ -87,7 +87,11 @@ myobj2.__proto__ === Object.prototype; // true
 
 #### prototype
 
-上面提到过，只有函数`function`才有`prototype`属性
+上面提到过，只有函数`function`才有`prototype`属性。
+
+为什么只有函数才有prototype属性？ES规范就这么定的。
+
+开玩笑了，其实函数在JS中真的很特殊，是所谓的_一等公民_。JS不像其它面向对象的语言，它没有类（class，ES6引进了这个关键字，但更多是语法糖）的概念。JS通过函数来模拟类。
 
 当你创建函数时，JS会为这个函数自动添加`prototype`属性，值是一个有 `constructor` 属性的对象。
 而一旦你把这个函数当作构造函数（`constructor`）调用（即通过`new`关键字调用），那么JS就会帮你创建该构造函数的实例，实例继承构造函数`prototype`的所有属性和方法（实例通过设置自己的`__proto__`指向承构造函数的`prototype`来实现这种继承）。
@@ -191,8 +195,6 @@ Object.__proto__ === Function.prototype  //true
 
 结论2: `__proto__`实际上并不存在于你使用的对象中(上述的myObj和myObj2)。
 他和`.constructor`一样（(.toString()、.isPrototypeOf(..)，等等)）。存在于内置的`Object.prototype`中.
-
-这也就解释了为什么创建function时，默认会有`prototype`属性.
 
 ## 原型链 & [[Prototype]] 机制
 
@@ -336,6 +338,10 @@ console.log(o2.__proto__ === Base);	//true
 
 * `Bar.prototype = Object.create( Foo.prototype );`
 “创建一个新的 `Bar.prototype` 对象并把它关联到 `Foo.prototype`”
+
+好好琢磨下面这个图：
+
+![](media/15212700457182/15217131808138.jpg)
 
 
 
