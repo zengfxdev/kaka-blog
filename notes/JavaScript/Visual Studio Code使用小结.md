@@ -13,7 +13,7 @@
 
 * 单行注释: `cmd + /`
 
-```
+```js
 { 
 "key": "cmd+/",                 
 "command": "editor.action.commentLine",
@@ -23,7 +23,7 @@
 
 * 多行注释: `ctrl+shift+/`
 
-```
+```js
 {
     "key": "ctrl+shift+/",
     "command": "editor.action.blockComment",
@@ -35,7 +35,7 @@
 
 `ctrl+space` --> `ctrl+/`
 
-```
+```js
 {
     "key": "ctrl+/",
     "command": "editor.action.triggerSuggest",
@@ -55,7 +55,7 @@
 
 * `f12` --> `ctrl+f12` : 移动到定义处
 
-```
+```js
 {
     "key": "ctrl+f12",
     "command": "editor.action.goToDeclaration",
@@ -65,7 +65,7 @@
 
 * `f11` --> `ctrl+f11` : 单步调试
 
-```
+```js
 {
     "key": "ctrl+f11",
     "command": "workbench.action.debug.stepInto",
@@ -75,7 +75,7 @@
 
 * `f10` --> `ctrl+f10` : 单步跳过
 
-```
+```js
 {
     "key": "ctrl+f10",
     "command": "workbench.action.debug.stepOver",
@@ -87,6 +87,18 @@
 
 #### 代码格式化 `alt+shift+f`
 
+#### 函数参数提示 `cmd+alt+1`
+
+`shift+cmd+space` --> `cmd+alt+1`
+
+```js
+{
+    "key": "alt+cmd+1",
+    "command": "editor.action.triggerParameterHints",
+    "when": "editorHasSignatureHelpProvider && editorTextFocus"
+}
+```
+
 ---
 
 ## 默认设置
@@ -95,7 +107,7 @@
 
 因为我外接了一个dell24寸的显示器,所以字体搞大了点😄.
 
-```
+```js
 {
     "editor.fontFamily": "Source Code Pro,Menlo, Monaco, 'Courier New', monospace",
     "editor.renderLineHighlight": "none",
